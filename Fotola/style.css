@@ -1,0 +1,172 @@
+@font-face {
+    font-family: qart;
+    src: url(src/asomtavr.ttf);
+}
+*{
+    font-family: qart;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body, .main .box {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+li, a {
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    background-color: #333438;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 2px;
+    border-color: rgba(95, 95, 95, 0.5);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 145px;
+
+    
+}
+header, nav, li, ul, nav{
+    background-image: linear-gradient(#202125,#333438);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 10;
+}
+nav {
+    width: fit-content;
+    margin-left: 20px;
+}
+.nav header{
+    box-shadow: 0px 0px 4px 2px black;
+}
+.fotola {
+    cursor: pointer;
+    justify-content: center;
+    margin: 0;
+    transition: 0.25s ease-out ;
+    width: 125px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0px;
+    background-image: linear-gradient(#202125,#333438);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.fotola:hover {
+    background-image: linear-gradient(#64D1E1, #91DEA0, #002639);
+    border-radius: 30%;
+    
+}
+.nav_links{
+    width: fit-content;
+    list-style: none;
+    margin-left: 20px;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    position: relative;
+    background-color: #202125;
+    border-radius: 10px;
+    padding: 6px 10px 6px 10px;
+    margin-bottom: 2px;
+}
+.nav_links li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #16c410;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.nav_links li a:hover {
+    background-color: #333438;
+    color: #16c410;
+}
+  
+.nav_links li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.footer {
+    justify-content: end;
+    background-color: #202125;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px ;
+    position: absolute;
+    left: 0;
+    color: white;
+    width: 100%; 
+    z-index: 10;
+}
+.main * {
+    background-color: #91DEA0;
+    padding: 15px;
+    transition: 0.2s ease-out;
+    margin-top: 15px;
+}
+.main {
+    width: 100%;
+    height: 100%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    text-wrap: balance;
+    box-shadow: 0 0 12px 2px #91dea0;
+
+}
+.box img {
+    width: 200px;
+    height: 50%;
+    border-width: 2px;
+    background-image: linear-gradient(#91dea0, #16c410);
+    border-color: #333438;
+    border-style: dotted;
+    margin-right: 5px;
+    transition: 0.2s ease-out;
+    border-radius: 20px;
+}
+.box h2:hover, .box img:hover{
+    transform: scale(1.02);
+}
+.box h2 {
+    color: white;
+    background-color: black;
+    width: 50%;
+    border-radius: 20px;
+
+}
+.navback {
+    background-color: yellow!important;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.last {
+    box-shadow: 0 0 0 0;
+}
+
