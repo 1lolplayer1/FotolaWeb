@@ -121,6 +121,13 @@ nav {
     width: 100%; 
     z-index: 10;
 }
+.footer a {
+    font-size: 17px;
+    background-color: #202125;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
 .navback {
     background-color: yellow!important;
     margin-bottom: 1px;
